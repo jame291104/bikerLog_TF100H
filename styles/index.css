@@ -33,3 +33,13 @@ main{
 .banner-section p{
     color: #fff;
 }
+
+/*styles for card*/
+.card {
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
