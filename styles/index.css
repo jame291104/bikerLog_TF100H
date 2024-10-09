@@ -15,29 +15,44 @@ main{
     overflow: hidden;
 }
 
-.banner-section{
-    margin-top: 10vh;
-    background-image: url("/assets/Bikerlog-image-main.png");
-    height: 80vh;
-    width: 100%;
-    background-repeat: no-repeat;
+
+.banner-section {
+    background-image: url('/assets/Bikerlog-image-main.png'); /* Imagen de fondo del banner */
     background-size: cover;
-    padding: 0;
-
+    background-position: center;
+    height: 600px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center; 
+    margin-top: 56px;
 }
 
-.banner-section h1{
-    color: #fff;
+/* Alinear el contenido a la izquierda */
+.banner-content {
+    max-width: 600px; 
+    padding-left: 30px; 
 }
 
-.banner-section p{
-    color: #fff;
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.banner-content .btn {
+    font-size: 1.25rem;
+    padding: 10px 20px;
 }
 
 /*styles for card*/
 .card {
     height: 100%;
-    min-height: 350px; /* Establece una altura mínima para las tarjetas */
+    min-height: 350px; /
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +60,40 @@ main{
 
 /* Ajustar las imágenes para que no se distorsionen y se mantengan dentro del contenedor */
 .card img {
-    height: 200px; /* Controla la altura máxima de la imagen */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    height: 200px; 
+    object-fit: cover; 
+}
+/* Cambia el color de cada palabra en el párrafo */
+.text-start {
+    text-align: left; 
+    
+}
+
+/* Estilos para las palabras individuales en el título */
+.word-1 {
+    color: blue; /* Cambia el color de 'Articulos' a azul */
+}
+
+.word-2 {
+    color: red; /* Cambia el color de 'recientes' a rojo */
+}
+/*style for about*/
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-style: italic;
 }
