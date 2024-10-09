@@ -32,8 +32,6 @@ main{
 
 .banner-section p{
     color: #fff;
-<<<<<<< HEAD
-=======
 }
 
 /*styles for card*/
@@ -49,5 +47,4 @@ main{
 .card img {
     height: 200px; /* Controla la altura máxima de la imagen */
     object-fit: cover; /* Mantiene la proporción de la imagen */
->>>>>>> rama-alvaro
 }
