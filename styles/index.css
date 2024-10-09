@@ -32,4 +32,22 @@ main{
 
 .banner-section p{
     color: #fff;
+<<<<<<< HEAD
+=======
+}
+
+/*styles for card*/
+.card {
+    height: 100%;
+    min-height: 350px; /* Establece una altura mínima para las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ajustar las imágenes para que no se distorsionen y se mantengan dentro del contenedor */
+.card img {
+    height: 200px; /* Controla la altura máxima de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+>>>>>>> rama-alvaro
 }
