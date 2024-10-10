@@ -2,6 +2,13 @@
     margin: 0;
 }
 
+:root{
+    --color-text: #FF9F34;
+    --secondo-color:#0072F0;
+    --font-text: Bebas Neue;
+
+}
+
 body{
     background-color: #fff;
     margin: 0;
@@ -96,4 +103,9 @@ main{
 
 .team-member p {
     font-style: italic;
+}
+
+.text-center h2 {
+  color: var(--color-text);
+  font-family: var(--font-text);
 }
