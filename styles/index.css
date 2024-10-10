@@ -145,3 +145,21 @@ main{
   color: var(--color-text);
   font-family: var(--font-text);
 }
+
+/* Ajusta el estilo de la sección */
+.video-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/*style for section container(quienes somos)*/
+.mb-4 {
+    font-family: var(--font-text);
+    color: var(--secondo-color);
+    font-size: 35PX;
+}
