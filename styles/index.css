@@ -61,15 +61,29 @@ main{
     color: white;
     margin-left: 80px;
     font-size: 30px;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     padding: 6px 10px;
 }
 
 .banner-section button {
-    padding: 8px 40px;
+    padding: 6px 40px;
     border-radius: 10px;
     font-family: "Bebas Neue";
     font-size: 30px;
+    margin: 20px 10px 0px 80px;
+    border: none;
+    background-color: #FF9F34;
+    color: #333333;
+}
+
+.banner-section button:hover{
+    border: 2px solid #FF9F34;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header{
+    padding-bottom: 100px;
 }
 
 /* Alinear el contenido a la izquierda */
@@ -126,9 +140,12 @@ main{
 
 /* Estilos para las palabras individuales en el título */
 .word-1 {
-    color: blue; /* Cambia el color de 'Articulos' a azul */
+    color: #333333; /* Cambia el color de 'Articulos' a azul */
+    font-family: "Bebas Neue";
 }
 
+
 .word-2 {
-    color: red; /* Cambia el color de 'recientes' a rojo */
+    color: #0072F0; /* Cambia el color de 'recientes' a rojo */
+    font-family: "Bebas Neue";
 }
