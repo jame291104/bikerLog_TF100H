@@ -72,7 +72,7 @@ main{
 }
 
 /* Alinear el contenido a la izquierda */
-/* .banner-content {
+.banner-content {
     max-width: 600px; 
     padding-left: 30px; 
 }
@@ -90,7 +90,7 @@ main{
 .banner-content .btn {
     font-size: 1.25rem;
     padding: 10px 20px;
-} */
+}
 
 /*styles for card*/
 .card {
