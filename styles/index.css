@@ -9,6 +9,7 @@
     --color-text: #FF9F34;
     --secondo-color:#0072F0;
     --font-text: Bebas Neue;
+    --second-font: 'Lato';
 
 }
 
@@ -108,23 +109,34 @@ header{
 
 /*styles for card*/
 .card {
-    height: 100%;
-    min-height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    padding: 20px; 
+    min-height: 450px; 
+    box-sizing: border-box; 
 }
 
-/* Ajustar las imágenes para que no se distorsionen y se mantengan dentro del contenedor */
-.card img {
+
+.card-img-top {
+    width: 100%;
     height: 200px; 
     object-fit: cover; 
 }
-/* Cambia el color de cada palabra en el párrafo */
-.text-start {
-    text-align: left; 
-    
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
+
+
+.btn {
+    margin-top: auto;
+}
+
+
 
 /* Estilos para las palabras individuales en el título */
 .word-1 {
@@ -136,47 +148,4 @@ header{
 .word-2 {
     color: #0072F0; /* Cambia el color de 'recientes' a rojo */
     font-family: "Bebas Neue";
-}
-/*style for about*/
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.team-member {
-    text-align: center;
-}
-
-.team-member h5 {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-.team-member p {
-    font-style: italic;
-}
-
-.text-center h2 {
-  color: var(--color-text);
-  font-family: var(--font-text);
-}
-
-/* Ajusta el estilo de la sección */
-.video-container {
-    max-width: 100%;
-    height: auto;
-}
-
-.video-container video {
-    width: 100%;
-    height: auto;
-}
-
-/*style for section container(quienes somos)*/
-.mb-4 {
-    font-family: var(--font-text);
-    color: var(--secondo-color);
-    font-size: 35PX;
 }

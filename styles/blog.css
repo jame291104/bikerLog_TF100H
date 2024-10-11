@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root{
+    --color-text: #FF9F34;
+    --secondo-color:#0072F0;
+    --third-color: #2A4858;
+    --font-text: Bebas Neue;
+    --second-font: 'Lato';
+
+}
+
+/* Estilos para la sección  h1 header y img*/
+.content-section {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    
+}
+
+/* Estilos para el h1 y p */
+.text-content {
+    flex: 1;
+    max-width: 50%; 
+    align-items: baseline;
+    position: relative;
+    bottom: -50px;   
+}
+
+.text-content h1{
+    font-family: var(--font-text);
+    font-size: 70px;
+}
+
+/*main*/
+main{
+    background-color: var(--third-color);
+}
+
+/* Estilos para la imagen */
+.image-content {
+    flex: 1;
+    max-width: 50%; 
+}
+
+.image-content img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+/*estilos para blog y img*/
+
+.articulos{
+    margin: 0 auto; /* Centra la sección en la página */
+    padding: 20px; /* Añade espacio alrededor de la sección */
+    max-width: 1200px; 
+    color: white;
+    margin: 0 auto; 
+    padding: 20px; 
+   
+}
+
+.tiulo, .subtitulo{
+    font-family: var(--font-text);
+    color: var(--color-text);
+
+}
+.tiulo{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto{
+    font-family: var(--second-font);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.word{
+    color: var(--secondo-color);
+}
+
+.container {
+    display: flex; /* Contenedor flexible */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.imagen-articulo {
+    flex-basis: 50%; /* La imagen ocupará el 50% del ancho */
+    margin-left: 20px; /* Espacio a la izquierda de la imagen */
+}
+
+.imagen-articulo img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.contenido {
+    flex-basis: 50%; 
+    max-width: 50%;
+    margin-left: 40px; 
+}
+
+/*estilos para btn(save)*/
+button.save {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+button.save:hover {
+    background-color: var(--color-text);
+    
+}
