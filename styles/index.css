@@ -9,6 +9,7 @@
     --color-text: #FF9F34;
     --secondo-color:#0072F0;
     --font-text: Bebas Neue;
+    --second-font: 'Lato';
 
 }
 
@@ -112,6 +113,15 @@ main{
     
 }
 
+.card-title{
+    font-family: var(--font-text);
+}
+
+.card-text{
+    font-size: 15px;
+    font-family: var(--second-font);
+}
+
 /* Estilos para las palabras individuales en el título */
 .word-1 {
     color: blue; /* Cambia el color de 'Articulos' a azul */
@@ -158,8 +168,15 @@ main{
 }
 
 /*style for section container(quienes somos)*/
+
+
 .mb-4 {
     font-family: var(--font-text);
     color: var(--secondo-color);
     font-size: 35PX;
+}
+
+.lead{
+    font-family: var(--second-font);
+    color: black;
 }
