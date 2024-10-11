@@ -50,3 +50,8 @@
     padding-right: 0px;
     margin-left: 0px;
 }
+
+.articulos{
+    background-color: var(--third-color);
+    color: white;
+}
