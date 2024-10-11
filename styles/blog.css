@@ -55,3 +55,17 @@
     background-color: var(--third-color);
     color: white;
 }
+
+.tiulo, .subtitulo{
+    font-family: var(--font-text);
+    color: var(--color-text)
+}
+
+.texto{
+    font-family: var(--second-font);
+
+}
+
+.word{
+    color: var(--secondo-color);
+}
