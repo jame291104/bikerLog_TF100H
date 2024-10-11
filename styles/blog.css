@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root{
+    --color-text: #FF9F34;
+    --secondo-color:#0072F0;
+    --third-color: #2A4858;
+    --font-text: Bebas Neue;
+    --second-font: 'Lato';
+
+}
+
+/* Estilos para la sección  h1 header y img*/
+.content-section {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    
+}
+
+/* Estilos para el h1 y p */
+.text-content {
+    flex: 1;
+    max-width: 50%; 
+    align-items: baseline;
+    position: relative;
+    bottom: -50px;   
+}
+
+.text-content h1{
+    font-family: var(--font-text);
+    font-size: 70px;
+}
+
+/* Estilos para la imagen */
+.image-content {
+    flex: 1;
+    max-width: 50%; 
+}
+
+.image-content img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    padding-right: 0px;
+    margin-left: 0px;
+}
