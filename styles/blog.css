@@ -220,3 +220,22 @@ footer p{
 .footer-bottom .social-media a:hover {
     text-decoration: underline; 
 }
+
+/* Estilos para la sección de calificación */
+.rating-section {
+    margin-top: 40px; /* Espacio superior */
+}
+
+.stars {
+    font-size: 30px; 
+    cursor: pointer; 
+}
+
+.star {
+    color: #FFD700; /* Color dorado para las estrellas */
+}
+/* Estilo para el mensaje de calificación */
+#rating-message {
+    margin-top: 10px; 
+    font-weight: bold; 
+}
