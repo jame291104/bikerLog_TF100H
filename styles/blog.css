@@ -37,10 +37,7 @@
     font-size: 70px;
 }
 
-/*main*/
-main{
-    background-color: var(--third-color);
-}
+
 
 /* Estilos para la imagen */
 .image-content {
@@ -58,13 +55,16 @@ main{
 
 /*estilos para blog y img*/
 
+.fondo{
+    
+    background-color: var(--third-color);
+}
 .articulos{
     margin: 0 auto; /* Centra la sección en la página */
     padding: 20px; /* Añade espacio alrededor de la sección */
     max-width: 1200px; 
     color: white;
     margin: 0 auto; 
-    padding: 20px; 
    
 }
 
@@ -91,14 +91,14 @@ main{
 }
 
 .container {
-    display: flex; /* Contenedor flexible */
-    justify-content: space-between; /* Espacia los elementos */
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .imagen-articulo {
-    flex-basis: 50%; /* La imagen ocupará el 50% del ancho */
-    margin-left: 20px; /* Espacio a la izquierda de la imagen */
+    flex-basis: 50%; 
+    margin-left: 20px; 
 }
 
 .imagen-articulo img {
@@ -122,9 +122,101 @@ button.save {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 15px;
+    float: right; 
+    margin-bottom:15px;
+    
 }
 
 button.save:hover {
     background-color: var(--color-text);
     
+}
+
+.fondoBlanco{
+    background-color: white;
+}
+
+
+/*styles for card*/
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px; 
+    min-height: 450px; 
+    box-sizing: border-box; 
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.btn {
+    margin-top: auto;
+}
+
+
+
+/* Estilos para las palabras individuales en el título */
+.word-1 {
+    color: #333333; /* Cambia el color de 'Articulos' a azul */
+    font-family: "Bebas Neue";
+}
+
+
+.word-2 {
+    color: #0072F0; /* Cambia el color de 'recientes' a rojo */
+    font-family: "Bebas Neue";
+}
+
+
+/*estilos para footer*/
+footer {
+    background-color: rgb(33, 37, 41);
+    color: white; 
+    padding: 20px; 
+    text-align: left; 
+}
+
+footer h4{
+    font-family: var(--font-text);
+}
+
+footer p{
+    font-family: var(--second-font);
+}
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.footer-content div {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px; 
+}
+
+.footer-bottom .social-media a {
+    margin: 0 10px; 
+    color: white; 
+}
+
+.footer-bottom .social-media a:hover {
+    text-decoration: underline; 
 }
