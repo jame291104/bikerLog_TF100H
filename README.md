@@ -13,7 +13,7 @@ BIKERLOG es una plataforma diseñada para conectar a motociclistas apasionados, 
 
 ## Tecnologías Usadas 💻⚙️
 - **HTML**: Para la estructura del contenido.
-- **CSS**: Para el diseño visual y la estética.
+- **CSS**: Para el diseño visual, la estética y responsivo.
 - **Bootstrap**: Para la creación de un diseño responsivo y componentes predefinidos.
 
 ## Autores 👥🔧
