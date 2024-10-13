@@ -1,254 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+/* Reset para márgenes y padding */
 * {
     margin: 0;
-}
-
-:root{
-    --color-text: #FF9F34;
-    --secondo-color:#0072F0;
-    --font-text: Bebas Neue;
-    --second-font: 'Lato';
-
-}
-
-body{
-    background-color: #fff;
-    margin: 0;
-    padding: 0%;
-    overflow-x: hidden;
+    padding: 0;
     box-sizing: border-box;
-
 }
 
-main{
-    overflow: hidden;
+:root {
+    --color-text: #FF9F34;
+    --secondo-color: #0072F0;
+    --font-text: 'Bebas Neue', sans-serif;
+    --second-font: 'Lato', sans-serif;
 }
 
+body {
+    background-color: #fff;
+    font-family: var(--second-font);
+    overflow-x: hidden;
+}
 
-.container-logo p{
-    font-family: "Bebas Neue";
+.container-logo p {
+    font-family: var(--font-text);
     font-size: 40px;
 }
 
-.banner-section {
-    background-image: url('/assets/Bikerlog-image-main.png'); /* Imagen de fondo del banner */
-    background-size: cover;
-    border:2px solid red;
-    background-position: center;
-    background-repeat: repeat;
-    height: 600px;
-    width: 100vw;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin-top: 100px;
-    justify-content: center;
-    align-items: start;
+header {
+    padding-bottom: 100px;
 }
 
-.banner-section h1{
+/* Sección del banner */
+.banner-section {
+    background-image: url('/assets/Bikerlog-image-main.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+    margin-top: 100px;
+}
+
+.banner-section h1 {
     color: white;
-    margin-left: 80px;
-    font-size: 150px;
-    font-family: "Bebas Neue";
-    line-height: 140px;
+    font-size: 6rem;
+    font-family: var(--font-text);
+    line-height: 1.2;
     margin-bottom: 0;
 }
+
 .banner-section p {
     color: white;
-    margin-left: 80px;
-    font-size: 30px;
-    background-color: rgb(50, 50, 50);
-    padding: 6px 10px;
+    font-size: 1.5rem;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 10px 15px;
 }
 
 .banner-section button {
-    padding: 6px 40px;
+    padding: 10px 30px;
     border-radius: 10px;
-    font-family: "Bebas Neue";
-    font-size: 30px;
-    margin: 20px 10px 0px 80px;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    margin-top: 20px;
     border: none;
-    background-color: #FF9F34;
-    color: #333333;
+    background-color: var(--color-text);
+    color: #333;
 }
 
-.banner-section button:hover{
-    border: 2px solid #FF9F34;
+.banner-section button:hover {
+    border: 2px solid var(--color-text);
     background-color: #1a1a1a;
     color: #fff;
 }
 
-header{
-    padding-bottom: 100px;
-}
-
-/* Alinear el contenido a la izquierda */
-.banner-content {
-    max-width: 600px; 
-    padding-left: 30px; 
-}
-
-.banner-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.banner-content p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-}
-
-.banner-content .btn {
-    font-size: 1.25rem;
-    padding: 10px 20px;
-}
-
-/*styles for card*/
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 20px; 
-    min-height: 450px; 
-    box-sizing: border-box; 
-}
-
-
-.card-img-top {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover; 
-}
-
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-
-.btn {
-    margin-top: auto;
-}
-
-
-
-/* Estilos para las palabras individuales en el título */
-.word-1 {
-    color: #333333; /* Cambia el color de 'Articulos' a azul */
-    font-family: "Bebas Neue";
-}
-
-
-.word-2 {
-    color: #0072F0; /* Cambia el color de 'recientes' a rojo */
-    font-family: "Bebas Neue";
-}
-
-.rodadas-container{
+/* Rodadas container */
+.rodadas-container {
     margin-top: 80px;
-}
-.cards-section{
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    max-width: 1200px;
-    justify-content: center;
-    margin: auto;
-    gap: 20px;
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-.rodada-card-container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 20px;
-    margin: 0px 20px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 2px solid #333333;
-    gap: 30px;
-}
-
-.rodada-card-container img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-
-}
-
-.text-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.text-container .card-title {
-    font-size: 20px;
-    font-family: "Bebas Neue";
-}
-
-.text-container .card-title {
-    font-size: 20px;
-    font-family: "Bebas Neue";
-    color: #2A4858;
-}
-
-.text-container .card-paragraph {
-    font-size: 18px;
-    font-family: "Lato";
-    line-height: 30px;
-}
-
-.text-container button {
-    font-size: 18px;
-    font-family: "Bebas Neue";
-}
-
-/*estilos para footer*/
-footer {
-    background-color: rgb(33, 37, 41);
-    color: white; 
-    padding: 20px; 
-    text-align: left; 
-}
-
-footer h4{
+.rodadas-container h2.eventos {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--secondo-color);
     font-family: var(--font-text);
 }
 
-footer p{
+/* Cards sección */
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Tarjetas individuales */
+.rodada-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rodada-card-container img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    padding: 15px;
+    text-align: left;
+    width: 60%;
+}
+
+.text-container .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-container .card-paragraph {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.text-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.text-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    padding: 20px;
+}
+
+footer h4 {
+    font-family: var(--font-text);
+}
+
+footer p {
     font-family: var(--second-font);
 }
+
 .footer-content {
-    display: flex; 
-    justify-content: space-between; 
-    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .footer-content div {
-    flex: 1; 
-    margin: 0 10px; 
+    flex: 1;
+    margin: 0 10px;
 }
 
 .footer-bottom {
     text-align: center;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .footer-bottom .social-media a {
-    margin: 0 10px; 
-    color: white; 
+    margin: 0 10px;
+    color: white;
 }
 
 .footer-bottom .social-media a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+}
+
+/* Responsividad para dispositivos pequeños y medianos */
+@media (max-width: 1024px) {
+    /* Ajustes generales */
+    .banner-section {
+        height: 400px; /* Menor altura para pantallas más pequeñas */
+        padding-left: 20px; /* Menos padding a la izquierda */
+    }
+
+    .banner-section h1 {
+        font-size: 4rem; /* Menor tamaño de fuente */
+    }
+
+    .banner-section p {
+        font-size: 1.25rem; /* Menor tamaño de fuente */
+    }
+
+    .banner-section button {
+        font-size: 1.25rem; /* Menor tamaño de botón */
+    }
+
+    .rodada-card-container {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        align-items: center; /* Alinear elementos al centro */
+    }
+
+    .rodada-card-container img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: 200px; /* Ajustar la altura */
+    }
+
+    .text-container {
+        width: 100%; /* Texto ocupa todo el ancho */
+        padding: 10px; /* Menos padding */
+    }
+    .newsletter {
+        display: none; /* Ocultar el contenedor del boletín */
+    }
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 390px) {
+    /* Ajustes específicos para pantallas pequeñas */
+    .rodada-card-container {
+        margin: 10px 0; /* Añadir margen entre tarjetas */
+    }
+
+    .rodadas-container h2.eventos {
+        font-size: 2rem; /* Ajustar tamaño del título */
+    }
+
+    .text-container .card-title {
+        font-size: 1.2rem; /* Tamaño más pequeño del título */
+    }
+
+    .text-container .card-paragraph {
+        font-size: 0.9rem; /* Tamaño más pequeño del párrafo */
+    }
+    .newsletter{
+        display: none;
+    }
+
+    .text-container button {
+        font-size: 0.9rem; /* Tamaño más pequeño del botón */
+    }
+
 }

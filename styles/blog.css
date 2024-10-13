@@ -240,3 +240,176 @@ footer p{
     margin-top: 10px; 
     font-weight: bold; 
 }
+
+.newsletter {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar texto */
+}
+/* Ajustes para pantallas de hasta 1200px (laptops grandes) */
+@media (max-width: 1200px) {
+    .content-section {
+        flex-direction: column; /* Coloca el contenido en columna */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .text-content {
+        max-width: 100%; /* Usa todo el ancho disponible */
+        bottom: 0; /* Alinea mejor el texto */
+    }
+
+    .image-content {
+        max-width: 100%; /* Imagen toma el 100% del contenedor */
+    }
+
+    .tiulo {
+        font-size: 35px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column; /* Las imágenes y textos se apilan */
+    }
+
+    .imagen-articulo, .contenido {
+        max-width: 100%; /* Imagen y contenido al 100% */
+        margin: 0; /* Elimina márgenes innecesarios */
+    }
+
+    button.save {
+        margin-top: 100px; /* Ajusta la posición del botón */
+    }
+}
+
+/* Ajustes para pantallas de hasta 992px (tablets) */
+@media (max-width: 992px) {
+    .text-content h1 {
+        font-size: 60px; /* Reduce tamaño de los encabezados */
+    }
+
+    .tiulo {
+        font-size: 30px;
+    }
+
+    .texto {
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column; /* Cambia a columna para mayor facilidad de lectura */
+    }
+
+    .imagen-articulo img {
+        object-fit: cover;
+    }
+    
+    .fondo {
+        padding: 10px; /* Ajusta el relleno para pantallas más pequeñas */
+    }
+
+    .card-img-top {
+        height: 150px; /* Reduce el tamaño de las imágenes de las tarjetas */
+    }
+
+    button.save {
+        margin-top: 50px; /* Ajusta la posición del botón */
+    }
+    .newsletter{
+        display: none;
+    }
+}
+
+/* Ajustes para pantallas de hasta 768px (móviles grandes) */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 50px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .tiulo {
+        font-size: 28px;
+    }
+
+    .texto {
+        font-size: 14px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto; /* Asegura que las imágenes se ajusten bien */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center; /* Centra el contenido en columnas */
+    }
+
+    button.save {
+        width: 100%; /* El botón ocupa todo el ancho disponible */
+        margin: 20px 0;
+    }
+
+    .card-img-top {
+        height: 120px; /* Reduce el tamaño de la imagen de las tarjetas */
+    }
+
+    .newsletter{
+        display: none;
+    }
+}
+
+/* Ajustes para pantallas de hasta 576px (móviles pequeños) */
+@media (max-width: 390px) {
+    .text-content h1 {
+        font-size: 40px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+  
+
+    .texto {
+        font-size: 13px;
+    }
+
+    .image-content img {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    button.save {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Footer en columna en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .footer-content div {
+        margin: 10px 0;
+    }
+
+    .card-img-top {
+        height: 100px; 
+    }
+
+    .newsletter{
+        display: none;
+    }
+
+}
