@@ -149,3 +149,66 @@ header{
     color: #0072F0; /* Cambia el color de 'recientes' a rojo */
     font-family: "Bebas Neue";
 }
+
+.rodadas-container{
+    margin-top: 80px;
+}
+.cards-section{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    max-width: 1200px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.rodada-card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    margin: 0px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    gap: 30px;
+}
+
+.rodada-card-container img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-container .card-title {
+    font-size: 20px;
+    font-family: "Bebas Neue";
+}
+
+.text-container .card-title {
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    color: #2A4858;
+}
+
+.text-container .card-paragraph {
+    font-size: 18px;
+    font-family: "Lato";
+    line-height: 30px;
+}
+
+.text-container button {
+    font-size: 18px;
+    font-family: "Bebas Neue";
+}
