@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 /* Reset para márgenes y padding */
 * {
     margin: 0;
@@ -57,7 +60,7 @@ header {
     padding: 10px 15px;
 }
 
-.banner-section button {
+.banner-section a {
     padding: 10px 30px;
     border-radius: 10px;
     font-family: var(--font-text);
@@ -66,24 +69,35 @@ header {
     border: none;
     background-color: var(--color-text);
     color: #333;
+    text-decoration: none;
 }
 
-.banner-section button:hover {
+
+.banner-section a:hover {
     border: 2px solid var(--color-text);
     background-color: #1a1a1a;
     color: #fff;
 }
 
+/* Estilos para las palabras individuales en el título */
+.word-1 {
+    color: #333333; /* Cambia el color de 'Articulos' a azul */
+    font-family: "Bebas Neue";
+}
 
-/*estilos para word1 y word2*/
-.word-1{
-    color: var(--secondo-color);
-    font-family: var(--font-text);
+
+.word-2 {
+    color: #0072F0; /* Cambia el color de 'recientes' a rojo */
+    font-family: "Bebas Neue";
 }
-.word-2{
-    color: var(--color-text);
-    font-family: var(--font-text);
+
+
+.card-title {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-weight: 400;
 }
+
 /* Rodadas container */
 .rodadas-container {
     margin-top: 80px;
@@ -136,7 +150,7 @@ header {
 
 .text-container .card-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 10px;
 }
 
