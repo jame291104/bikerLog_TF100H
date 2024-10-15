@@ -74,6 +74,16 @@ header {
     color: #fff;
 }
 
+
+/*estilos para word1 y word2*/
+.word-1{
+    color: var(--secondo-color);
+    font-family: var(--font-text);
+}
+.word-2{
+    color: var(--color-text);
+    font-family: var(--font-text);
+}
 /* Rodadas container */
 .rodadas-container {
     margin-top: 80px;
