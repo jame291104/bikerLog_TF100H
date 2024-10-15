@@ -75,6 +75,7 @@ main{
     border: none;
     background-color: #FF9F34;
     color: #333333;
+    text-decoration: none;
 }
 
 .banner-section button:hover{
