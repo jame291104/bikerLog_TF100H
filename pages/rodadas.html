@@ -1,0 +1,159 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKERLOG</title>
+    <link rel="stylesheet" href="/styles/rodadas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/logo-removebg-preview (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">BIKERLOG</a> -->
+              <a class="navbar-brand" href="#">
+                  <div class="container-logo">
+                    <p>BIKERLOG</p>
+                  </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Emprende una nueva aventura</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rodadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/aboutUs.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/loginAdmin.html">Iniciar Sesión</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                  <!-- <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="banner-section">
+              <h1>BikerLog</h1> 
+              <p>El blog mas influyente de la comunidad hispanohablante</p>
+              <button>¡A RODAR!</button>
+          </section>
+    </header>
+<main>
+    <section class="intro">
+        <h2>Próximas Rodadas</h2>
+        <p>Únete a nuestras próximas rodadas y explora nuevas rutas.</p>
+    </section>
+
+    <section class="eventos">
+        <div class="evento">
+            <h3>Rodada por las Montañas</h3>
+            <p>Fecha: 20 de Octubre 2024</p>
+            <p>Distancia: 50 km</p>
+            <a href="#inscribirse" class="btn">Inscribirse</a>
+        </div>
+        <div class="evento">
+            <h3>Rodada en la Ciudad</h3>
+            <p>Fecha: 27 de Octubre 2024</p>
+            <p>Distancia: 30 km</p>
+            <a href="#inscribirse" class="btn">Inscribirse</a>
+        </div>
+    </section>
+
+    <section id="inscribirse" class="formulario">
+        <h2>Formulario de Inscripción</h2>
+        <form action="inscripcion.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="evento">Elige el evento:</label>
+            <select id="evento" name="evento" required>
+                <option value="montanas">Rodada por las Montañas</option>
+                <option value="ciudad">Rodada en la Ciudad</option>
+            </select>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <div id="contacto" class="contact-info">
+            <h4>Contacto</h4>
+            <p>Email: bikerlog@gmail.com</p>
+            <p>Teléfono: (57) 456-7890</p>
+        </div>
+        
+        <div class="links">
+            <h4>Enlaces importantes</h4>
+            <ul>
+                <li><a href="../pages/aboutUs.html">Sobre nosotros</a></li>
+                <li><a href="#">Rodadas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="../pages/loginAdmin.html">Iniciar sesion</a></li>
+            </ul>
+        </div>
+        
+        <div class="noticias">
+            <h4>Suscríbete al boletín</h4>
+            <form action="/suscripcion" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 BIKERLOG. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93G1EwhbvtKVYvTrPT5s8IkAjrI6gmHugRftlkrC7WYMfduGF2yCDboKI9d6L7" crossorigin="anonymous"></script>
+  <script src="/scripts/app.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+-->
