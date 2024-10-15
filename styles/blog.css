@@ -9,6 +9,7 @@
     --color-text: #FF9F34;
     --secondo-color:#0072F0;
     --third-color: #2A4858;
+    --dark-grey: #272727;
     --font-text: Bebas Neue;
     --second-font: 'Lato';
 
@@ -57,7 +58,7 @@
 
 .fondo{
     
-    background-color: var(--third-color);
+    background-color: var(--dark-grey);
 }
 .articulos{
     margin: 0 auto; /* Centra la sección en la página */
@@ -165,6 +166,12 @@ button.save:hover {
 
 .btn {
     margin-top: auto;
+}
+
+.card-title {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-weight: 400;
 }
 
 
